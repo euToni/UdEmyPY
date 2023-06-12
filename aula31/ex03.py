@@ -5,14 +5,29 @@ Faça um programa que peça o primeiro nome do usuário. Se o nome tiver 4 letra
 
 #---------------MINHA SOLUÇÃO-------------
 
-nome = input('Qual é o seu nome? ')
+# nome = input('Qual é o seu nome? ')
 
-if len(nome) <= 4:
-    print('Seu nome é curto!')
-elif len(nome) <= 6 :
-    print('Seu nome é normal!')
-else:
-    print('Seu nome é muito grande!')
+# if len(nome) <= 4:
+#     print('Seu nome é curto!')
+# elif len(nome) <= 6 :
+#     print('Seu nome é normal!')
+# else:
+#     print('Seu nome é muito grande!')
 
 
 #----------CORREÇÃO--------------------
+
+nm = input('Digite seu nome: ')
+tamanho_nome = len(nm)
+
+if tamanho_nome > 1:
+    if tamanho_nome <= 4:
+        print('Seu nome é curto')
+    elif tamanho_nome >= 5 and tamanho_nome <= 6:
+        print('Seu nome é normal')
+    else:
+        print('Seu nome é muito grande!')
+else:
+    print('Digite mais de uma letra')
+
+
